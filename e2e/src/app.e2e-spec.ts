@@ -9,6 +9,6 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to BIUProject!');
+    expect(page.getTitleText()).toEqual('Welcome to AngularProject!');
   });
 });

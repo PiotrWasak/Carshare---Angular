@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "BIUProject": {
+    "AngularProject": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/BIUProject",
+            "outputPath": "dist/AngularProject",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "BIUProject:build"
+            "browserTarget": "AngularProject:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "BIUProject:build:production"
+              "browserTarget": "AngularProject:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "BIUProject:build"
+            "browserTarget": "AngularProject:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "BIUProject-e2e": {
+    "AngularProject-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "BIUProject:serve"
+            "devServerTarget": "AngularProject:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "BIUProject:serve:production"
+              "devServerTarget": "AngularProject:serve:production"
             }
           }
         },
@@ -135,7 +135,7 @@
       }
     }
   },
-  "defaultProject": "BIUProject",
+  "defaultProject": "AngularProject",
   "cli": {
     "analytics": "b39cacd7-01b0-4d90-8cbd-43499535eaec"
   }
